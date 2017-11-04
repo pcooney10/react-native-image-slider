@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     buttonSelected: {
         opacity: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#16CCD9',
     }
 });
 
