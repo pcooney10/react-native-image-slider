@@ -35,11 +35,9 @@ const styles = StyleSheet.create({
         width: 8,
         height: 8,
         borderRadius: 8 / 2,
-        backgroundColor: '#ccc',
-        opacity: 0.9
+        backgroundColor: '#95989A',
     },
     buttonSelected: {
-        opacity: 1,
         backgroundColor: '#16CCD9',
     }
 });
