@@ -198,14 +198,14 @@ export default class ImageSlider extends Component {
 }
 
 function debounce(func, wait, immediate) {
-    const timeout;
+    var timeout;
     return function() {
-        const context = this, args = arguments;
-        const later = function() {
+        var context = this, args = arguments;
+        var later = function() {
             timeout = null;
             if (!immediate) func.apply(context, args);
         };
-        const callNow = immediate && !timeout;
+        var callNow = immediate && !timeout;
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
