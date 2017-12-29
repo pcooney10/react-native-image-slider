@@ -39,7 +39,10 @@ const styles = StyleSheet.create({
     },
     buttonSelected: {
         backgroundColor: '#16CCD9',
-    }
+    },
+    img: {
+      resizeMode: 'contain'
+    },
 });
 
 export default class ImageSlider extends Component {
@@ -162,7 +165,7 @@ export default class ImageSlider extends Component {
                     const imageComponent = <Image
                         key={index}
                         source={imageObject}
-                        style={{height, width}}
+                        style={[styles.img, {height, width}]}
                     />;
                     if (this.props.onPress) {
                         return (
